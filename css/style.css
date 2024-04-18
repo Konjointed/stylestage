@@ -13,16 +13,58 @@
     height: 720px; 
     background-color: #fff; 
     border: 2px solid #ccc; 
-    border-top: 20px solid #ddd; 
+    /* border-top: 20px solid #ddd;  */
     border-radius: 5px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
-    padding: 10px; 
+    /* padding: 10px;  */
     overflow: auto;
+    box-sizing: border-box;
+    position: relative; 
 }
+
+#browser-header {
+    background-color: #ddd;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#browser-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.browser-button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.browser-button.close {
+    background-color: #ff5f57;
+}
+
+.browser-button.maximize {
+    background-color: #ffbd2e;
+}
+
+.browser-button.minimize {
+    background-color: #28c840;
+}
+
+#browser-content {
+    padding: 20px;
+}  
 
 @media (max-width: 768px) {
     #browser-window {
-      width: 90%;
-      height: auto;
+        width: 90%;
+        height: auto;
     }
-  }
+}
