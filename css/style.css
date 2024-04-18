@@ -1,0 +1,27 @@
+#desktop {
+    height: 100vh;
+    background-image: url('../wallpaper.webp');
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#browser-window {
+    width: 1280px;
+    height: 720px; 
+    background-color: #fff; 
+    border: 2px solid #ccc; 
+    border-top: 20px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    padding: 10px; 
+}
+
+@media (max-width: 768px) {
+    #browser-window {
+      width: 90%;
+      height: auto;
+    }
+  }
