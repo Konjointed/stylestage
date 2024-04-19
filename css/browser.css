@@ -1,3 +1,5 @@
+/* This is to style the page to look like a computer desktop */
+
 #desktop {
     height: 100vh;
     background-image: url('../wallpaper.png');
