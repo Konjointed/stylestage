@@ -1,0 +1,162 @@
+/* 
+#1a1a1a
+#121212
+#333
+#bb86fc 
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+/* -------------------------------------------- */
+/* PAGE HEADER                                  */
+/* -------------------------------------------- */
+header {
+    background: linear-gradient(270deg, 
+                                red, 
+                                orange, 
+                                yellow, 
+                                green, 
+                                blue, 
+                                indigo, 
+                                violet, red);
+    background-size: 3000% 3000%; 
+    animation: Gradient 30s ease infinite; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .container {
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+header h1 {
+    font-size: 2.5em; 
+    margin: 0.5em 0; 
+    font-weight: bold; 
+}
+
+header h2 {
+    font-size: 1.5em; 
+    margin-bottom: 1em; 
+}
+
+header p, header a {
+    font-size: 1.2em; 
+    color: inherit; 
+    text-decoration: none;
+}
+
+/* header a:hover {
+    text-decoration: underline; 
+} */
+/* -------------------------------------------- */
+/* MAIN NAV                                     */
+/* -------------------------------------------- */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav {
+    position: sticky;
+    top: 30px;
+    z-index: 1000; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2em; 
+    padding: 10px 15px; 
+}
+
+nav a:hover {
+    color: #bb86fc;
+}
+
+main {
+    background-color: #333;
+    padding: 20px;
+}
+
+/* -------------------------------------------- */
+/* PAGE FOOTER                                  */
+/* -------------------------------------------- */
+.page-footer {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the footer links */
+.page-footer a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+/* Adds hover effect to footer links*/
+.page-footer a:hover, .page-footer a:focus {
+    text-decoration: underline;
+    color: #ff79c6;
+}
+
+.page-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-footer ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.page-footer ul li a.link-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-footer ul li a.link-github svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: white;
+}

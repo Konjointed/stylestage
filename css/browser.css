@@ -1,6 +1,6 @@
 #desktop {
     height: 100vh;
-    background-image: url('../wallpaper.webp');
+    background-image: url('../wallpaper.png');
     background-size: cover;
     background-position: center; 
     display: flex;
@@ -58,13 +58,15 @@
     background-color: #28c840;
 }
 
-#browser-content {
-    padding: 20px;
-}  
+/* #browser-content {
+    background-color: #121212;
+    padding: 20px; 
+}*/
 
 @media (max-width: 768px) {
     #browser-window {
-        width: 90%;
-        height: auto;
+        width: 95%;
+        border-radius: 0;
+        box-shadow: none;
     }
 }
